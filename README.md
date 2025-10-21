@@ -13,9 +13,9 @@ A Chrome extension that helps YouTube creators quickly add multilingual titles a
 ## 📦 Installation
 
 ### For Users
-1. Download the latest release ZIP file
+1. Download the Code ZIP file
 2. Extract to a folder
-3. Open Chrome and go to `chrome://extensions/`
+3. Open Chrome (or any chromium browser) and go to `chrome://extensions/`
 4. Enable "Developer mode"
 5. Click "Load unpacked" and select the extracted folder
 
