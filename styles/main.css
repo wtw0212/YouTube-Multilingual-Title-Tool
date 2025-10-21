@@ -1,0 +1,1011 @@
+/* Main action buttons - YouTube風格配色 */
+#quick-add-title-btn,
+#bulk-command-btn {
+  color: white;
+  padding: 0 16px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: var(--yt-font-weight-medium);
+  font-family: var(--yt-font-family-primary) !important;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.25px;
+}
+
+#quick-add-title-btn {
+  background: linear-gradient(135deg, #1976d2, #0d47a1);
+}
+
+#quick-add-title-btn:hover {
+  background: linear-gradient(135deg, #1565c0, #0c3d91);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
+
+#bulk-command-btn {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+}
+
+#bulk-command-btn:hover {
+  background: linear-gradient(135deg, #e53935, #c62828);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
+}
+
+/* Modal backdrops */
+#qayt-modal-backdrop,
+#qayt-bulk-modal-backdrop,
+#qayt-edit-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content containers - YouTube風格 */
+#qayt-modal-content,
+#qayt-bulk-modal-content,
+#qayt-edit-modal-content {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 95vw;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #272727;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+#qayt-modal-content {
+  width: 600px;
+}
+
+#qayt-bulk-modal-content {
+  width: 700px;
+}
+
+#qayt-edit-modal-content {
+  width: 700px;
+}
+
+/* Modal titles - YouTube風格 */
+#qayt-modal-content h2,
+#qayt-bulk-modal-content h2,
+#qayt-edit-modal-content h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid;
+  font-weight: var(--yt-font-weight-medium);
+  font-family: var(--yt-font-family-primary) !important;
+  letter-spacing: -0.5px;
+}
+
+#qayt-modal-content h2 {
+  color: #1976d2;
+  border-bottom-color: #1976d2;
+}
+
+#qayt-bulk-modal-content h2 {
+  color: #f44336;
+  border-bottom-color: #f44336;
+}
+
+#qayt-edit-modal-content h2 {
+  color: #28a745;
+  border-bottom-color: #28a745;
+}
+
+#qayt-modal-content h3 {
+  margin: 15px 0 10px;
+  font-size: 16px;
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #272727;
+  font-weight: var(--yt-font-weight-normal);
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+/* Warning box - YouTube風格 */
+.qayt-warning-box {
+  display: flex;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3);
+  border-left: 4px solid #ff3d00;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-warning-icon {
+  font-size: 24px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.qayt-warning-content {
+  flex: 1;
+  line-height: 1.5;
+  font-weight: var(--yt-font-weight-normal);
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-warning-content strong {
+  font-weight: var(--yt-font-weight-medium);
+}
+
+.qayt-warning-example {
+  font-size: 13px;
+  opacity: 0.9;
+  font-style: italic;
+  font-weight: var(--yt-font-weight-light);
+}
+
+/* Description areas - YouTube風格 */
+.qayt-bulk-description {
+  background: #181818;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #f44336;
+  border: 1px solid #272727;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-bulk-description p {
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: var(--yt-font-weight-normal);
+  line-height: 1.4;
+}
+
+.qayt-bulk-description strong {
+  font-weight: var(--yt-font-weight-medium);
+}
+
+.qayt-bulk-description code {
+  background: #272727;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Roboto Mono", "Consolas", "Monaco", monospace;
+  color: #f44336;
+  font-size: 13px;
+}
+
+/* Language reference guide - YouTube風格 */
+.qayt-lang-reminder {
+  margin-top: 12px;
+  padding: 12px;
+  background: #272727;
+  border-radius: 6px;
+  border-left: 3px solid #f44336;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-lang-reminder strong {
+  font-weight: var(--yt-font-weight-medium);
+}
+
+.qayt-lang-tag {
+  display: inline-block;
+  background: #3c4043;
+  color: #fff;
+  padding: 4px 8px;
+  margin: 2px 4px 2px 0;
+  border-radius: 12px;
+  font-size: 12px;
+  font-family: var(--yt-font-family-primary) !important;
+  font-weight: var(--yt-font-weight-normal);
+  border: 1px solid #5f6368;
+}
+
+/* Global controls */
+#qayt-global-controls {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+#qayt-global-controls label {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: var(--yt-font-weight-normal);
+  user-select: none;
+}
+
+#qayt-master-checkbox {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+#qayt-reset-btn {
+  font-size: 12px;
+  background: none;
+  border: 1px solid #5f6368;
+  color: #aaa;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--yt-font-family-primary) !important;
+  font-weight: var(--yt-font-weight-normal);
+}
+
+#qayt-reset-btn:hover {
+  background: #5f6368;
+  color: #fff;
+}
+
+/* Language container */
+#qayt-langs-container {
+  overflow-y: auto;
+  padding: 5px;
+  margin-bottom: 20px;
+  max-height: 45vh;
+}
+
+/* Language rows */
+.qayt-lang-row {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0;
+  border-bottom: 1px solid #272727;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-lang-row:last-child {
+  border-bottom: none;
+}
+
+.qayt-lang-row:not(.disabled) .qayt-lang-header:hover {
+  background-color: #272727;
+}
+
+.qayt-lang-row.disabled {
+  opacity: 0.5;
+}
+
+.qayt-lang-header {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.qayt-checkbox {
+  margin-right: 15px;
+  transform: scale(1.5);
+  flex-shrink: 0;
+}
+
+.qayt-lang-name {
+  font-size: 15px;
+  font-weight: var(--yt-font-weight-normal);
+  user-select: none;
+  flex-grow: 1;
+  margin: 0 8px;
+  cursor: pointer;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.qayt-custom-input {
+  width: 100%;
+  padding: 6px 40px 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #5f6368;
+  background-color: #181818;
+  color: #fff;
+  font-size: 13px;
+  font-weight: var(--yt-font-weight-normal);
+  font-family: var(--yt-font-family-primary) !important;
+  box-sizing: border-box;
+}
+
+.qayt-custom-input:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.qayt-custom-input::placeholder {
+  color: #aaa;
+  font-weight: var(--yt-font-weight-light);
+}
+
+.qayt-confirm-lang {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4caf50;
+  background: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.qayt-confirm-lang:hover {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.qayt-delete-lang {
+  color: #f44336;
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0 5px;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.qayt-delete-lang:hover {
+  color: #ef5350;
+}
+
+.qayt-expand-btn {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  width: 24px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  user-select: none;
+  transform: rotate(0deg);
+}
+
+.qayt-lang-row.expanded .qayt-expand-btn {
+  transform: rotate(90deg);
+}
+
+.qayt-lang-details {
+  display: none;
+  padding: 10px 12px 10px 50px;
+}
+
+.qayt-lang-row.expanded .qayt-lang-details {
+  display: block;
+}
+
+.qayt-title-input,
+.qayt-desc-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #5f6368;
+  background-color: #181818;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: var(--yt-font-weight-normal);
+  font-family: var(--yt-font-family-primary) !important;
+  transition: border-color 0.2s;
+  line-height: 1.4;
+}
+
+.qayt-title-input:focus,
+.qayt-desc-textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.qayt-title-input::placeholder,
+.qayt-desc-textarea::placeholder {
+  color: #aaa;
+  font-weight: var(--yt-font-weight-light);
+}
+
+.qayt-desc-textarea {
+  margin-top: 8px;
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* Add custom language button - 修復動畫問題 */
+#qayt-add-custom-btn {
+  background: linear-gradient(135deg, #1976d2, #0d47a1);
+  color: white;
+  padding: 0 24px;
+  height: 44px;
+  border-radius: 22px;
+  font-size: 15px;
+  font-weight: var(--yt-font-weight-medium);
+  font-family: var(--yt-font-family-primary) !important;
+  border: none;
+  cursor: pointer;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  width: fit-content;
+  align-self: flex-start;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(25, 118, 210, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* 確保按鈕不會被壓扁 */
+  flex-shrink: 0;
+  min-height: 44px;
+  /* 防止重複點擊時的變形 */
+  transform-origin: center;
+  letter-spacing: 0.25px;
+}
+
+/* 添加hover效果 */
+#qayt-add-custom-btn:hover {
+  background: linear-gradient(135deg, #1565c0, #0c3d91);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(25, 118, 210, 0.4);
+}
+
+/* 添加點擊效果 */
+#qayt-add-custom-btn:active {
+  transform: translateY(0px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
+  transition: all 0.1s ease;
+}
+
+/* 確保按鈕內容不會變形 */
+#qayt-add-custom-btn span {
+  flex-shrink: 0;
+  display: inline-block;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+/* Bulk textarea - YouTube風格 */
+#qayt-bulk-only-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  background: #181818;
+  color: #fff;
+  border: 2px solid #5f6368;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Roboto Mono", "Consolas", "Monaco", monospace;
+  font-weight: var(--yt-font-weight-normal);
+  resize: vertical;
+  min-height: 120px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+  line-height: 1.4;
+}
+
+#qayt-bulk-only-textarea:focus {
+  border-color: #f44336;
+  outline: none;
+  box-shadow: 0 0 8px rgba(244, 67, 54, 0.3);
+}
+
+#qayt-bulk-only-textarea::placeholder {
+  color: #aaa;
+  font-weight: var(--yt-font-weight-light);
+}
+
+/* Preview container */
+#qayt-bulk-preview-container {
+  margin-bottom: 20px;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+#qayt-bulk-preview-container h3 {
+  margin: 0 0 15px;
+  font-size: 16px;
+  font-weight: var(--yt-font-weight-medium);
+  color: #f44336;
+}
+
+#qayt-bulk-preview-list {
+  max-height: 200px;
+  overflow-y: auto;
+  background: #181818;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #272727;
+}
+
+.qayt-preview-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #272727;
+  border-radius: 6px;
+  border-left: 3px solid #f44336;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-preview-item:last-child {
+  margin-bottom: 0;
+}
+
+.qayt-preview-number {
+  background: #f44336;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: var(--yt-font-weight-bold);
+  margin-right: 12px;
+  flex-shrink: 0;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-preview-content {
+  flex: 1;
+}
+
+.qayt-preview-lang {
+  font-weight: var(--yt-font-weight-medium);
+  color: #f44336;
+  margin-bottom: 4px;
+  font-family: "Roboto Mono", "Consolas", "Monaco", monospace;
+  border: 1px dashed #f44336;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.qayt-preview-title {
+  color: #fff;
+  margin-bottom: 2px;
+  font-weight: var(--yt-font-weight-normal);
+  font-size: 14px;
+}
+
+.qayt-preview-desc {
+  color: #aaa;
+  font-size: 13px;
+  font-weight: var(--yt-font-weight-light);
+}
+
+.qayt-preview-error {
+  color: #f44336;
+  text-align: center;
+  padding: 20px;
+  font-weight: var(--yt-font-weight-medium);
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+/* Progress bars - YouTube風格 */
+.qayt-progress-label,
+.qayt-bulk-progress-label,
+.qayt-edit-progress-label {
+  font-size: 18px;
+  font-weight: var(--yt-font-weight-medium);
+  font-family: var(--yt-font-family-primary) !important;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: -0.25px;
+}
+
+.qayt-progress-label {
+  color: #1976d2;
+}
+
+.qayt-bulk-progress-label {
+  color: #f44336;
+}
+
+.qayt-edit-progress-label {
+  color: #28a745;
+}
+
+.qayt-progress-bar-outer,
+.qayt-bulk-progress-bar-outer,
+.qayt-edit-progress-bar-outer {
+  height: 12px;
+  background-color: #272727;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.qayt-progress-bar-inner {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #1976d2, #0d47a1);
+  border-radius: 6px;
+  transition: width 0.4s ease-in-out;
+}
+
+.qayt-bulk-progress-bar-inner {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #f44336, #d32f2f);
+  border-radius: 6px;
+  transition: width 0.4s ease-in-out;
+}
+
+.qayt-edit-progress-bar-inner {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #28a745, #20c997);
+  border-radius: 6px;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Modal buttons - YouTube風格統一 */
+.qayt-modal-buttons,
+.qayt-bulk-modal-buttons,
+.qayt-edit-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #272727;
+}
+
+/* 統一按鈕樣式 - YouTube風格 */
+.qayt-btn-primary,
+.qayt-btn-secondary,
+.qayt-modal-buttons button,
+.qayt-bulk-modal-buttons button,
+.qayt-edit-modal-buttons button {
+  padding: 0 24px;
+  height: 42px;
+  border-radius: 21px;
+  font-size: 15px;
+  font-weight: var(--yt-font-weight-medium);
+  font-family: var(--yt-font-family-primary) !important;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.25px;
+}
+
+.qayt-btn-primary {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: white;
+}
+
+.qayt-btn-primary:hover {
+  background: linear-gradient(135deg, #e53935, #c62828);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(244, 67, 54, 0.4);
+}
+
+.qayt-btn-secondary {
+  background: linear-gradient(135deg, #5f6368, #3c4043);
+  color: white;
+}
+
+.qayt-btn-secondary:hover {
+  background: linear-gradient(135deg, #3c4043, #202124);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(95, 99, 104, 0.4);
+}
+
+/* Quick tool modal buttons - 開始新增按鈕改為藍色主題 */
+.qayt-modal-buttons button#qayt-confirm-btn {
+  background: linear-gradient(135deg, #1976d2, #0d47a1);
+  color: white;
+}
+
+.qayt-modal-buttons button#qayt-confirm-btn:hover {
+  background: linear-gradient(135deg, #1565c0, #0c3d91);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(25, 118, 210, 0.4);
+}
+
+/* Quick tool modal close button - 關閉按鈕保持灰色 */
+.qayt-modal-buttons button#qayt-cancel-btn {
+  background: linear-gradient(135deg, #5f6368, #3c4043);
+  color: white;
+}
+
+.qayt-modal-buttons button#qayt-cancel-btn:hover {
+  background: linear-gradient(135deg, #3c4043, #202124);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(95, 99, 104, 0.4);
+}
+
+/* Bulk Edit Modal Styles */
+#qayt-edit-modal-content {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 700px;
+  max-width: 95vw;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #272727;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+#qayt-edit-modal-content h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #28a745;
+  color: #28a745;
+  font-weight: var(--yt-font-weight-medium);
+  font-family: var(--yt-font-family-primary) !important;
+  letter-spacing: -0.5px;
+}
+
+/* Existing translations list */
+#qayt-existing-translations {
+  background: #181818;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-left: 4px solid #28a745;
+  border: 1px solid #272727;
+}
+
+#qayt-existing-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.qayt-existing-item {
+  display: flex;
+  align-items: flex-start;
+  background: #272727;
+  border: 1px solid #3c4043;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 8px;
+  transition: border-color 0.2s;
+}
+
+.qayt-existing-item:hover {
+  border-color: #28a745;
+}
+
+.qayt-existing-number {
+  background: #28a745;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: var(--yt-font-weight-bold);
+  margin-right: 12px;
+  flex-shrink: 0;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-existing-content {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.qayt-existing-lang {
+  color: #28a745;
+  font-weight: var(--yt-font-weight-medium);
+  margin-bottom: 4px;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-existing-title {
+  color: #fff;
+  font-weight: var(--yt-font-weight-normal);
+  margin-bottom: 4px;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-existing-desc {
+  color: #aaa;
+  font-size: 13px;
+  font-weight: var(--yt-font-weight-light);
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+.qayt-no-translations {
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+  padding: 20px;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+/* Edit textarea */
+#qayt-edit-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 2px solid #5f6368;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Roboto Mono", "Consolas", "Monaco", monospace;
+  resize: vertical;
+  margin-bottom: 16px;
+  transition: border-color 0.3s;
+  background: #181818;
+  color: #fff;
+  line-height: 1.4;
+}
+
+#qayt-edit-textarea:focus {
+  border-color: #28a745;
+  outline: none;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+}
+
+#qayt-edit-textarea::placeholder {
+  color: #aaa;
+  font-weight: var(--yt-font-weight-light);
+}
+
+/* Edit preview container */
+#qayt-edit-preview-container {
+  background: #181818;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #272727;
+}
+
+#qayt-edit-preview-container h3 {
+  margin: 0 0 15px;
+  font-size: 16px;
+  font-weight: var(--yt-font-weight-medium);
+  color: #28a745;
+  font-family: var(--yt-font-family-primary) !important;
+}
+
+#qayt-edit-preview-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Edit modal buttons */
+.qayt-edit-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #272727;
+}
+
+.qayt-edit-modal-buttons button {
+  padding: 0 24px;
+  height: 42px;
+  border-radius: 21px;
+  font-size: 15px;
+  font-weight: var(--yt-font-weight-medium);
+  font-family: var(--yt-font-family-primary) !important;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.25px;
+}
+
+#qayt-edit-execute-btn {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+}
+
+#qayt-edit-execute-btn:hover {
+  background: linear-gradient(135deg, #218838, #1ea085);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(40, 167, 69, 0.4);
+}
+
+#qayt-edit-cancel-btn {
+  background: linear-gradient(135deg, #5f6368, #3c4043);
+  color: white;
+}
+
+#qayt-edit-cancel-btn:hover {
+  background: linear-gradient(135deg, #3c4043, #202124);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(95, 99, 104, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #qayt-modal-content,
+  #qayt-bulk-modal-content,
+  #qayt-edit-modal-content {
+    width: 95vw;
+    padding: 20px;
+  }
+
+  .qayt-lang-header {
+    flex-wrap: wrap;
+  }
+
+  .qayt-checkbox {
+    transform: scale(1.3);
+  }
+
+  #qayt-add-custom-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* YouTube Font Optimization - Match YouTube's exact typography */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* YouTube Font Variables */
+:root {
+  --yt-font-family-primary: "Roboto", "Arial", sans-serif;
+  --yt-font-family-secondary: "YouTube Sans", "Roboto", "Arial", sans-serif;
+  --yt-font-weight-light: 300;
+  --yt-font-weight-normal: 400;
+  --yt-font-weight-medium: 500;
+  --yt-font-weight-bold: 700;
+}
+
+/* Apply YouTube fonts globally to extension elements */
+#quick-add-title-btn,
+#bulk-command-btn,
+#qayt-modal-content,
+#qayt-bulk-modal-content,
+#qayt-edit-modal-content,
+#qayt-modal-content *,
+#qayt-bulk-modal-content *,
+#qayt-edit-modal-content *,
+.qayt-lang-row,
+.qayt-lang-name,
+.qayt-title-input,
+.qayt-desc-textarea,
+.qayt-custom-input,
+.qayt-modal-buttons button,
+.qayt-bulk-modal-buttons button,
+.qayt-edit-modal-buttons button {
+  font-family: var(--yt-font-family-primary) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

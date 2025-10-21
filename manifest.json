@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "version": "1.0.0",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "en",
+  "permissions": ["storage", "activeTab", "tabs"],
+  "host_permissions": ["https://studio.youtube.com/*"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "__MSG_extensionName__",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://studio.youtube.com/video/*/translations*"],
+      "js": [
+        "src/utils/storage-manager.js",
+        "src/utils/language-manager.js",
+        "src/components/ui-manager.js",
+        "src/components/translation-processor.js",
+        "src/content-script.js"
+      ],
+      "css": ["styles/main.css"]
+    }
+  ]
+}

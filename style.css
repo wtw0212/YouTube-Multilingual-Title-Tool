@@ -1,0 +1,714 @@
+/* 基礎樣式 */
+#qayt-modal-backdrop,
+#qayt-bulk-modal-backdrop,
+#qayt-edit-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  backdrop-filter: blur(3px);
+}
+
+#qayt-modal-content,
+#qayt-bulk-modal-content,
+#qayt-edit-modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 標題樣式 */
+#qayt-modal-content h2,
+#qayt-bulk-modal-content h2,
+#qayt-edit-modal-content h2 {
+  margin: 0 0 20px 0;
+  color: #1a73e8;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#qayt-modal-content h3,
+#qayt-bulk-modal-content h3,
+#qayt-edit-modal-content h3 {
+  margin: 16px 0 12px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* 警告提醒框 */
+.qayt-warning-box {
+  display: flex;
+  align-items: flex-start;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.qayt-warning-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.qayt-warning-content {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.qayt-warning-example {
+  color: #856404;
+  font-style: italic;
+}
+
+/* 批量描述區域 */
+.qayt-bulk-description {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.qayt-bulk-description p {
+  margin: 0 0 8px 0;
+}
+
+.qayt-bulk-description code {
+  background: #e9ecef;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+}
+
+/* 語言標籤 */
+.qayt-lang-reminder {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #dee2e6;
+}
+
+.qayt-lang-tag {
+  display: inline-block;
+  background: #e3f2fd;
+  color: #1565c0;
+  padding: 4px 8px;
+  margin: 2px 4px 2px 0;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* 全域控制區 */
+#qayt-global-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+#qayt-master-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+#qayt-global-controls label {
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+#qayt-reset-btn {
+  margin-left: auto;
+  padding: 6px 12px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+#qayt-reset-btn:hover {
+  background: #5a6268;
+}
+
+/* 語言行樣式 */
+.qayt-lang-row {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.qayt-lang-row:hover {
+  border-color: #1a73e8;
+  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.1);
+}
+
+.qayt-lang-row.disabled {
+  opacity: 0.6;
+  background: #f5f5f5;
+}
+
+.qayt-lang-row.expanded {
+  border-color: #1a73e8;
+}
+
+.qayt-lang-header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.qayt-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+  accent-color: #1a73e8;
+}
+
+.qayt-expand-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-size: 12px;
+  color: #666;
+}
+
+.qayt-expand-btn:hover {
+  background: #f0f0f0;
+  color: #1a73e8;
+}
+
+.qayt-lang-name {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+.qayt-delete-lang {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #dc3545;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.qayt-delete-lang:hover {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.qayt-lang-details {
+  display: none;
+  padding: 0 12px 12px 12px;
+  border-top: 1px solid #e0e0e0;
+  background: #fafafa;
+}
+
+.qayt-lang-row.expanded .qayt-lang-details {
+  display: block;
+}
+
+.qayt-title-input,
+.qayt-desc-textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  transition: border-color 0.2s;
+}
+
+.qayt-title-input:focus,
+.qayt-desc-textarea:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.1);
+}
+
+.qayt-desc-textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* 自訂語言輸入 */
+.qayt-input-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 8px;
+}
+
+.qayt-custom-input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.qayt-confirm-lang {
+  padding: 6px 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.qayt-confirm-lang:hover {
+  background: #218838;
+}
+
+/* 新增自訂語言按鈕 */
+.qayt-add-custom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #6c757d;
+  margin-bottom: 16px;
+  transition: all 0.2s ease;
+}
+
+.qayt-add-custom-btn:hover {
+  background: #e9ecef;
+  border-color: #1a73e8;
+  color: #1a73e8;
+}
+
+/* 進度條 */
+.qayt-progress-label,
+.qayt-bulk-progress-label,
+.qayt-edit-progress-label {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.qayt-progress-bar-outer,
+.qayt-bulk-progress-bar-outer,
+.qayt-edit-progress-bar-outer {
+  width: 100%;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.qayt-progress-bar-inner,
+.qayt-bulk-progress-bar-inner,
+.qayt-edit-progress-bar-inner {
+  height: 100%;
+  background: linear-gradient(90deg, #1a73e8, #4285f4);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+  width: 0%;
+}
+
+/* 按鈕樣式 */
+.qayt-modal-buttons,
+.qayt-bulk-modal-buttons,
+.qayt-edit-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.qayt-btn-primary,
+.qayt-btn-secondary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  min-width: 100px;
+}
+
+.qayt-btn-primary {
+  background: #1a73e8;
+  color: white;
+}
+
+.qayt-btn-primary:hover {
+  background: #1557b0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(26, 115, 232, 0.3);
+}
+
+.qayt-btn-secondary {
+  background: #f8f9fa;
+  color: #6c757d;
+  border: 1px solid #dee2e6;
+}
+
+.qayt-btn-secondary:hover {
+  background: #e9ecef;
+  color: #495057;
+}
+
+/* 主要操作按鈕 */
+#quick-add-title-btn,
+#bulk-command-btn,
+#bulk-edit-btn {
+  margin-left: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+#quick-add-title-btn {
+  background: #1a73e8;
+  color: white;
+}
+
+#quick-add-title-btn:hover {
+  background: #1557b0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(26, 115, 232, 0.3);
+}
+
+#bulk-command-btn {
+  background: #ff6b35;
+  color: white;
+}
+
+#bulk-command-btn:hover {
+  background: #e55a2b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3);
+}
+
+#bulk-edit-btn {
+  background: #28a745;
+  color: white;
+}
+
+#bulk-edit-btn:hover {
+  background: #218838;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+/* 批量指令文本區域 */
+#qayt-bulk-only-textarea,
+#qayt-edit-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Courier New", monospace;
+  resize: vertical;
+  margin-bottom: 16px;
+  transition: border-color 0.2s;
+}
+
+#qayt-bulk-only-textarea:focus,
+#qayt-edit-textarea:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.1);
+}
+
+/* 預覽區域 */
+#qayt-bulk-preview-container,
+#qayt-edit-preview-container {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+#qayt-bulk-preview-list,
+#qayt-edit-preview-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.qayt-preview-item {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 8px;
+  transition: border-color 0.2s;
+}
+
+.qayt-preview-item:hover {
+  border-color: #1a73e8;
+}
+
+.qayt-preview-number {
+  background: #1a73e8;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.qayt-preview-content {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.qayt-preview-lang {
+  color: #1a73e8;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.qayt-preview-title {
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.qayt-preview-desc {
+  color: #666;
+  font-size: 13px;
+}
+
+.qayt-preview-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* 現有翻譯列表 */
+#qayt-existing-translations {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+#qayt-existing-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.qayt-existing-item {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.qayt-existing-number {
+  background: #28a745;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.qayt-existing-content {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.qayt-existing-lang {
+  color: #28a745;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.qayt-existing-title {
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.qayt-existing-desc {
+  color: #666;
+  font-size: 13px;
+}
+
+.qayt-no-translations {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  #qayt-modal-content,
+  #qayt-bulk-modal-content,
+  #qayt-edit-modal-content {
+    max-width: 95vw;
+    padding: 16px;
+  }
+
+  .qayt-modal-buttons,
+  .qayt-bulk-modal-buttons,
+  .qayt-edit-modal-buttons {
+    flex-direction: column;
+  }
+
+  .qayt-btn-primary,
+  .qayt-btn-secondary {
+    width: 100%;
+  }
+
+  #qayt-global-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  #qayt-reset-btn {
+    margin-left: 0;
+    align-self: stretch;
+  }
+}
+
+/* 動畫效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.qayt-lang-details {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* 滾動條樣式 */
+#qayt-modal-content::-webkit-scrollbar,
+#qayt-bulk-modal-content::-webkit-scrollbar,
+#qayt-edit-modal-content::-webkit-scrollbar,
+#qayt-bulk-preview-list::-webkit-scrollbar,
+#qayt-edit-preview-list::-webkit-scrollbar,
+#qayt-existing-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+#qayt-modal-content::-webkit-scrollbar-track,
+#qayt-bulk-modal-content::-webkit-scrollbar-track,
+#qayt-edit-modal-content::-webkit-scrollbar-track,
+#qayt-bulk-preview-list::-webkit-scrollbar-track,
+#qayt-edit-preview-list::-webkit-scrollbar-track,
+#qayt-existing-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+#qayt-modal-content::-webkit-scrollbar-thumb,
+#qayt-bulk-modal-content::-webkit-scrollbar-thumb,
+#qayt-edit-modal-content::-webkit-scrollbar-thumb,
+#qayt-bulk-preview-list::-webkit-scrollbar-thumb,
+#qayt-edit-preview-list::-webkit-scrollbar-thumb,
+#qayt-existing-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+#qayt-modal-content::-webkit-scrollbar-thumb:hover,
+#qayt-bulk-modal-content::-webkit-scrollbar-thumb:hover,
+#qayt-edit-modal-content::-webkit-scrollbar-thumb:hover,
+#qayt-bulk-preview-list::-webkit-scrollbar-thumb:hover,
+#qayt-edit-preview-list::-webkit-scrollbar-thumb:hover,
+#qayt-existing-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

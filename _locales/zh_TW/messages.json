@@ -1,0 +1,209 @@
+{
+  "extensionName": {
+    "message": "YouTube 多語言標題快速新增工具"
+  },
+  "extensionDescription": {
+    "message": "【UI優化】加大核取方塊，點擊語言名稱可展開/折疊輸入區。一鍵全自動新增多語言翻譯，並記憶自訂清單。"
+  },
+  "languageQuickTool": {
+    "message": "🚀 語言快速工具"
+  },
+  "bulkCommand": {
+    "message": "⚡ 批量指令"
+  },
+  "bulkCommandExecutor": {
+    "message": "🚀 批量指令執行器"
+  },
+  "importantReminder": {
+    "message": "重要提醒："
+  },
+  "languageNameWarning": {
+    "message": "語言名稱必須與 YouTube 新增語言選項中的名稱完全相同，包括所有符號和括號！"
+  },
+  "languageNameExample": {
+    "message": "例如：使用「中文（繁體）」而不是「中文繁体」或「中文(繁體)」"
+  },
+  "inputFormat": {
+    "message": "輸入格式："
+  },
+  "example": {
+    "message": "範例："
+  },
+  "description": {
+    "message": "說明："
+  },
+  "formatDescription": {
+    "message": "使用 | 分隔語言、標題、簡介，簡介可以省略"
+  },
+  "commonLanguageNames": {
+    "message": "📝 常見語言名稱："
+  },
+  "previewResults": {
+    "message": "預覽解析結果："
+  },
+  "language": {
+    "message": "🌐 語言："
+  },
+  "title": {
+    "message": "📝 標題："
+  },
+  "descriptionLabel": {
+    "message": "📄 簡介："
+  },
+  "none": {
+    "message": "(無)"
+  },
+  "preparing": {
+    "message": "準備中…"
+  },
+  "close": {
+    "message": "關閉"
+  },
+  "executeNow": {
+    "message": "🚀 立即執行"
+  },
+  "processing": {
+    "message": "正在處理"
+  },
+  "completed": {
+    "message": "🎉 批量執行完成！"
+  },
+  "selectLanguages": {
+    "message": "選擇語言並展開填寫標題與簡介"
+  },
+  "selectAllToggle": {
+    "message": " 全選／取消全選"
+  },
+  "resetDefault": {
+    "message": "↺ 重設預設"
+  },
+  "addCustomLanguage": {
+    "message": "⊕ 新增自訂語言"
+  },
+  "startAdding": {
+    "message": "開始新增"
+  },
+  "titleRequired": {
+    "message": "標題 (必填)"
+  },
+  "descriptionOptional": {
+    "message": "簡介 (選填)"
+  },
+  "languageName": {
+    "message": "語言名稱"
+  },
+  "resetConfirm": {
+    "message": "重設為預設語言？自訂將遺失。"
+  },
+  "fillTitleOrUncheck": {
+    "message": "請為「{0}」填入標題或取消勾選。"
+  },
+  "noLanguageSelected": {
+    "message": "未選擇任何語言。"
+  },
+  "confirmExecution": {
+    "message": "即將處理 {0} 個語言：{1}\n\n⚠️ 請確認語言名稱與 YouTube 新增語言選項完全相同（包括符號）\n\n確定要執行嗎？"
+  },
+  "allCompleted": {
+    "message": "全部完成！"
+  },
+  "inputBulkCommand": {
+    "message": "請輸入批量指令。"
+  },
+  "bulkCommandParseError": {
+    "message": "批量指令解析錯誤：{0}\n\n正確格式：{{語言|標題|簡介},{語言|標題|簡介}}"
+  },
+  "noValidBulkCommand": {
+    "message": "未找到有效的批量指令。"
+  },
+  "pasteBulkCommand": {
+    "message": "貼上批量指令，如：{{英文|My Title|My Description},{中文（繁體）|我的標題|我的描述}}"
+  },
+  "languageProcessingFailed": {
+    "message": "以下語言處理失敗：{0}\n\n請檢查語言名稱是否與 YouTube 的「新增語言」選項完全匹配。您可以打開 YouTube 的「新增語言」下拉選單來確認正確的名稱。"
+  },
+  "english": {
+    "message": "英文"
+  },
+  "chineseSimplified": {
+    "message": "中文（簡體）"
+  },
+  "chineseTraditional": {
+    "message": "中文（繁體）"
+  },
+  "spanish": {
+    "message": "西班牙文"
+  },
+  "hindi": {
+    "message": "印地文"
+  },
+  "arabic": {
+    "message": "阿拉伯文"
+  },
+  "bengali": {
+    "message": "孟加拉文"
+  },
+  "portuguese": {
+    "message": "葡萄牙文"
+  },
+  "russian": {
+    "message": "俄文"
+  },
+  "japanese": {
+    "message": "日文"
+  },
+  "korean": {
+    "message": "韓文"
+  },
+  "french": {
+    "message": "法文"
+  },
+  "german": {
+    "message": "德文"
+  },
+  "italian": {
+    "message": "義大利文"
+  },
+  "popupTitle": {
+    "message": "YouTube 多語言標題新增工具"
+  },
+  "popupSubtitle": {
+    "message": "快速多語言新增工具"
+  },
+  "extensionEnabled": {
+    "message": "擴充功能已啟用"
+  },
+  "extensionEnabledDesc": {
+    "message": "切換以啟用/停用擴充功能"
+  },
+  "extensionDisabled": {
+    "message": "擴充功能已停用"
+  },
+  "openYouTubeStudio": {
+    "message": "開啟 YouTube 工作室"
+  },
+  "buyMeCoffee": {
+    "message": "請我喝咖啡 (贊助)"
+  },
+  "contactFeedback": {
+    "message": "回饋與聯絡"
+  },
+  "openingYouTubeStudio": {
+    "message": "正在開啟 YouTube 工作室..."
+  },
+  "thankYouSupport": {
+    "message": "感謝您的支持！☕"
+  },
+  "openingEmailClient": {
+    "message": "正在開啟郵件客戶端..."
+  },
+  "emailCopied": {
+    "message": "電子郵件地址已複製到剪貼簿：wtw0212.hk@gmail.com"
+  },
+  "version": {
+    "message": "版本"
+  },
+  "lastUpdate": {
+    "message": "最後更新"
+  }
+}

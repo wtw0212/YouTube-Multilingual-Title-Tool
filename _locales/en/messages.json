@@ -1,0 +1,209 @@
+{
+  "extensionName": {
+    "message": "YouTube Multilingual Title Quick Add Tool"
+  },
+  "extensionDescription": {
+    "message": "One-click automatic addition of multilingual translations with custom language list memory and UI optimization."
+  },
+  "languageQuickTool": {
+    "message": "🚀 Language Quick Tool"
+  },
+  "bulkCommand": {
+    "message": "⚡ Bulk Command"
+  },
+  "bulkCommandExecutor": {
+    "message": "🚀 Bulk Command Executor"
+  },
+  "importantReminder": {
+    "message": "Important Reminder:"
+  },
+  "languageNameWarning": {
+    "message": "Language names must exactly match the names in YouTube's add language options, including all symbols and parentheses!"
+  },
+  "languageNameExample": {
+    "message": "For example: use \"English\" instead of \"english\" or \"English (US)\""
+  },
+  "inputFormat": {
+    "message": "Input Format:"
+  },
+  "example": {
+    "message": "Example:"
+  },
+  "description": {
+    "message": "Description:"
+  },
+  "formatDescription": {
+    "message": "Use | to separate language, title, and description. Description is optional"
+  },
+  "commonLanguageNames": {
+    "message": "📝 Common Language Names:"
+  },
+  "previewResults": {
+    "message": "Preview Results:"
+  },
+  "language": {
+    "message": "🌐 Language:"
+  },
+  "title": {
+    "message": "📝 Title:"
+  },
+  "descriptionLabel": {
+    "message": "📄 Description:"
+  },
+  "none": {
+    "message": "(None)"
+  },
+  "preparing": {
+    "message": "Preparing..."
+  },
+  "close": {
+    "message": "Close"
+  },
+  "executeNow": {
+    "message": "🚀 Execute Now"
+  },
+  "processing": {
+    "message": "Processing"
+  },
+  "completed": {
+    "message": "🎉 Bulk execution completed!"
+  },
+  "selectLanguages": {
+    "message": "Select languages and expand to fill in titles and descriptions"
+  },
+  "selectAllToggle": {
+    "message": " Select All / Deselect All"
+  },
+  "resetDefault": {
+    "message": "↺ Reset Default"
+  },
+  "addCustomLanguage": {
+    "message": "⊕ Add Custom Language"
+  },
+  "startAdding": {
+    "message": "Start Adding"
+  },
+  "titleRequired": {
+    "message": "Title (Required)"
+  },
+  "descriptionOptional": {
+    "message": "Description (Optional)"
+  },
+  "languageName": {
+    "message": "Language Name"
+  },
+  "resetConfirm": {
+    "message": "Reset to default languages? Custom languages will be lost."
+  },
+  "fillTitleOrUncheck": {
+    "message": "Please fill in the title for \"{0}\" or uncheck it."
+  },
+  "noLanguageSelected": {
+    "message": "No language selected."
+  },
+  "confirmExecution": {
+    "message": "About to process {0} languages: {1}\n\n⚠️ Please confirm that language names exactly match YouTube's add language options (including symbols)\n\nAre you sure you want to execute?"
+  },
+  "allCompleted": {
+    "message": "All completed!"
+  },
+  "inputBulkCommand": {
+    "message": "Please input bulk command."
+  },
+  "bulkCommandParseError": {
+    "message": "Bulk command parse error: {0}\n\nCorrect format: {{language|title|description},{language|title|description}}"
+  },
+  "noValidBulkCommand": {
+    "message": "No valid bulk command found."
+  },
+  "pasteBulkCommand": {
+    "message": "Paste bulk command, e.g.: {{English|My Title|My Description},{Chinese (Simplified)|我的标题|我的描述}}"
+  },
+  "languageProcessingFailed": {
+    "message": "The following languages failed to process: {0}\n\nPlease check if the language names exactly match YouTube's \"Add Language\" options. You can open YouTube's \"Add Language\" dropdown to verify the correct names."
+  },
+  "english": {
+    "message": "English"
+  },
+  "chineseSimplified": {
+    "message": "Chinese (Simplified)"
+  },
+  "chineseTraditional": {
+    "message": "Chinese (Traditional)"
+  },
+  "spanish": {
+    "message": "Spanish"
+  },
+  "hindi": {
+    "message": "Hindi"
+  },
+  "arabic": {
+    "message": "Arabic"
+  },
+  "bengali": {
+    "message": "Bengali"
+  },
+  "portuguese": {
+    "message": "Portuguese"
+  },
+  "russian": {
+    "message": "Russian"
+  },
+  "japanese": {
+    "message": "Japanese"
+  },
+  "korean": {
+    "message": "Korean"
+  },
+  "french": {
+    "message": "French"
+  },
+  "german": {
+    "message": "German"
+  },
+  "italian": {
+    "message": "Italian"
+  },
+  "popupTitle": {
+    "message": "YouTube Multilingual Title Add Tool"
+  },
+  "popupSubtitle": {
+    "message": "Quick multilingual add tool"
+  },
+  "extensionEnabled": {
+    "message": "Extension Enabled"
+  },
+  "extensionEnabledDesc": {
+    "message": "Toggle to enable/disable the extension"
+  },
+  "extensionDisabled": {
+    "message": "Extension disabled"
+  },
+  "openYouTubeStudio": {
+    "message": "Open YouTube Studio"
+  },
+  "buyMeCoffee": {
+    "message": "Buy Me a Coffee (Sponsor)"
+  },
+  "contactFeedback": {
+    "message": "Feedback & Contact"
+  },
+  "openingYouTubeStudio": {
+    "message": "Opening YouTube Studio..."
+  },
+  "thankYouSupport": {
+    "message": "Thank you for your support! ☕"
+  },
+  "openingEmailClient": {
+    "message": "Opening email client..."
+  },
+  "emailCopied": {
+    "message": "Email copied to clipboard: wtw0212.hk@gmail.com"
+  },
+  "version": {
+    "message": "Version"
+  },
+  "lastUpdate": {
+    "message": "Last Update"
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Multilingual Tool</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <div class="popup-header">
+      <div class="popup-icon">🚀</div>
+      <div class="popup-title-section">
+        <h1 class="popup-title" data-i18n="popupTitle">YouTube Multilingual Tool</h1>
+        <p class="popup-subtitle" data-i18n="popupSubtitle">Quick multilingual translation tool</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="popup-content">
+      <!-- Extension Toggle Switch -->
+      <div class="control-item enabled" id="extensionControl">
+        <div class="control-info">
+          <div class="control-title" data-i18n="extensionEnabled">Extension Enabled</div>
+          <div class="control-description" data-i18n="extensionEnabledDesc">Toggle to enable/disable the extension</div>
+        </div>
+        <div class="toggle-switch">
+          <input type="checkbox" id="extensionToggle" class="toggle-input" checked>
+          <label for="extensionToggle" class="toggle-label">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- YouTube Studio Button -->
+      <div class="action-item">
+        <button id="openYouTubeStudioBtn" class="btn btn-youtube">
+          <span class="btn-icon">🎬</span>
+          <span class="btn-text" data-i18n="openYouTubeStudio">Open YouTube Studio</span>
+        </button>
+      </div>
+
+      <!-- Buy Me a Coffee Button -->
+      <div class="action-item">
+        <button id="buyMeCoffeeBtn" class="btn btn-coffee">
+          <span class="btn-icon">☕</span>
+          <span class="btn-text" data-i18n="buyMeCoffee">Buy Me a Coffee</span>
+        </button>
+      </div>
+
+      <!-- Feedback/Contact Button -->
+      <div class="action-item">
+        <button id="contactBtn" class="btn btn-contact">
+          <span class="btn-icon">📧</span>
+          <span class="btn-text" data-i18n="contactFeedback">Feedback & Contact</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="popup-footer">
+      <div class="version-info">
+        <span data-i18n="version">Version</span> v1.0 - <span data-i18n="lastUpdate">Last Update</span>:21/10/2025
+      </div>
+      <div class="email-info">
+        📧 wtw0212.hk@gmail.com
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+      <div class="toast-content" id="toastContent"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

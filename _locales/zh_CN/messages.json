@@ -1,0 +1,209 @@
+{
+  "extensionName": {
+    "message": "YouTube 多语言标题快速添加工具"
+  },
+  "extensionDescription": {
+    "message": "【UI优化】放大复选框，点击语言名称可展开/折叠输入区。一键全自动添加多语言翻译，并记忆自定义列表。"
+  },
+  "languageQuickTool": {
+    "message": "🚀 语言快速工具"
+  },
+  "bulkCommand": {
+    "message": "⚡ 批量指令"
+  },
+  "bulkCommandExecutor": {
+    "message": "🚀 批量指令执行器"
+  },
+  "importantReminder": {
+    "message": "重要提醒："
+  },
+  "languageNameWarning": {
+    "message": "语言名称必须与 YouTube 添加语言选项中的名称完全相同，包括所有符号和括号！"
+  },
+  "languageNameExample": {
+    "message": "例如：使用「中文（简体）」而不是「中文简体」或「中文(简体)」"
+  },
+  "inputFormat": {
+    "message": "输入格式："
+  },
+  "example": {
+    "message": "示例："
+  },
+  "description": {
+    "message": "说明："
+  },
+  "formatDescription": {
+    "message": "使用 | 分隔语言、标题、简介，简介可以省略"
+  },
+  "commonLanguageNames": {
+    "message": "📝 常见语言名称："
+  },
+  "previewResults": {
+    "message": "预览解析结果："
+  },
+  "language": {
+    "message": "🌐 语言："
+  },
+  "title": {
+    "message": "📝 标题："
+  },
+  "descriptionLabel": {
+    "message": "📄 简介："
+  },
+  "none": {
+    "message": "(无)"
+  },
+  "preparing": {
+    "message": "准备中…"
+  },
+  "close": {
+    "message": "关闭"
+  },
+  "executeNow": {
+    "message": "🚀 立即执行"
+  },
+  "processing": {
+    "message": "正在处理"
+  },
+  "completed": {
+    "message": "🎉 批量执行完成！"
+  },
+  "selectLanguages": {
+    "message": "选择语言并展开填写标题与简介"
+  },
+  "selectAllToggle": {
+    "message": " 全选／取消全选"
+  },
+  "resetDefault": {
+    "message": "↺ 重置默认"
+  },
+  "addCustomLanguage": {
+    "message": "⊕ 添加自定义语言"
+  },
+  "startAdding": {
+    "message": "开始添加"
+  },
+  "titleRequired": {
+    "message": "标题 (必填)"
+  },
+  "descriptionOptional": {
+    "message": "简介 (选填)"
+  },
+  "languageName": {
+    "message": "语言名称"
+  },
+  "resetConfirm": {
+    "message": "重置为默认语言？自定义设置将丢失。"
+  },
+  "fillTitleOrUncheck": {
+    "message": "请为「{0}」填入标题或取消勾选。"
+  },
+  "noLanguageSelected": {
+    "message": "未选择任何语言。"
+  },
+  "confirmExecution": {
+    "message": "即将处理 {0} 个语言：{1}\n\n⚠️ 请确认语言名称与 YouTube 添加语言选项完全相同（包括符号）\n\n确定要执行吗？"
+  },
+  "allCompleted": {
+    "message": "全部完成！"
+  },
+  "inputBulkCommand": {
+    "message": "请输入批量指令。"
+  },
+  "bulkCommandParseError": {
+    "message": "批量指令解析错误：{0}\n\n正确格式：{{语言|标题|简介},{语言|标题|简介}}"
+  },
+  "noValidBulkCommand": {
+    "message": "未找到有效的批量指令。"
+  },
+  "pasteBulkCommand": {
+    "message": "粘贴批量指令，如：{{英文|My Title|My Description},{中文（简体）|我的标题|我的描述}}"
+  },
+  "languageProcessingFailed": {
+    "message": "以下语言处理失败：{0}\n\n请检查语言名称是否与 YouTube 的「添加语言」选项完全匹配。您可以打开 YouTube 的「添加语言」下拉菜单来确认正确的名称。"
+  },
+  "english": {
+    "message": "英文"
+  },
+  "chineseSimplified": {
+    "message": "中文（简体）"
+  },
+  "chineseTraditional": {
+    "message": "中文（繁体）"
+  },
+  "spanish": {
+    "message": "西班牙文"
+  },
+  "hindi": {
+    "message": "印地文"
+  },
+  "arabic": {
+    "message": "阿拉伯文"
+  },
+  "bengali": {
+    "message": "孟加拉文"
+  },
+  "portuguese": {
+    "message": "葡萄牙文"
+  },
+  "russian": {
+    "message": "俄文"
+  },
+  "japanese": {
+    "message": "日文"
+  },
+  "korean": {
+    "message": "韩文"
+  },
+  "french": {
+    "message": "法文"
+  },
+  "german": {
+    "message": "德文"
+  },
+  "italian": {
+    "message": "意大利文"
+  },
+  "popupTitle": {
+    "message": "YouTube 多语言标题新增工具"
+  },
+  "popupSubtitle": {
+    "message": "快速多语言新增工具"
+  },
+  "extensionEnabled": {
+    "message": "扩展已启用"
+  },
+  "extensionEnabledDesc": {
+    "message": "切换以启用/禁用扩展"
+  },
+  "extensionDisabled": {
+    "message": "扩展已禁用"
+  },
+  "openYouTubeStudio": {
+    "message": "打开 YouTube 工作室"
+  },
+  "buyMeCoffee": {
+    "message": "请我喝咖啡 (赞助)"
+  },
+  "contactFeedback": {
+    "message": "反馈与联系"
+  },
+  "openingYouTubeStudio": {
+    "message": "正在打开 YouTube 工作室..."
+  },
+  "thankYouSupport": {
+    "message": "感谢您的支持！☕"
+  },
+  "openingEmailClient": {
+    "message": "正在打开邮件客户端..."
+  },
+  "emailCopied": {
+    "message": "邮箱地址已复制到剪贴板：wtw0212.hk@gmail.com"
+  },
+  "version": {
+    "message": "版本"
+  },
+  "lastUpdate": {
+    "message": "最后更新"
+  }
+}
